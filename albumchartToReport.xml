@@ -1,0 +1,274 @@
+<?xml version="1.0"?>
+<albumchart>
+  <chartauthor>
+    <author>Jakub Sipika 203991</author>
+    <author>Olha Vasylyshyn 207294</author>
+  </chartauthor>
+  <artists>
+    <artist artist_id="Radiohead">Radiohead</artist>
+    <artist artist_id="PinkFloyd">PinkFloyd</artist>
+    <artist artist_id="KingCrimson">KingCrimson</artist>
+    <artist artist_id="MyBloodyValentine">MyBloodyValentine</artist>
+    <artist artist_id="HaveaNiceLife">HaveaNiceLife</artist>
+    <artist artist_id="GodspeedYouBlackEmperor">GodspeedYouBlackEmperor</artist>
+    <artist artist_id="Behemoth">Behemoth</artist>
+    <artist artist_id="Toto">Toto</artist>
+    <artist artist_id="ArcticMonkeys">ArcticMonkeys</artist>
+    <artist artist_id="RoyalBlood">RoyalBlood</artist>
+    <artist artist_id="Rammstein">Rammstein</artist>
+    <artist artist_id="NothingButThieves">NothingButThieves</artist>
+    <artist artist_id="BlackSabbath">BlackSabbath</artist>
+    <artist artist_id="NeuralMilkHotel">NeuralMilkHotel</artist>
+    <artist artist_id="JoyDivision">JoyDivision</artist>
+    <artist artist_id="TheSmiths">TheSmiths</artist>
+    <artist artist_id="TheDoors">TheDoors</artist>
+  </artists>
+  <genres>
+    <genre genre_id="AltRock">AltRock</genre>
+    <genre genre_id="ProgRock">ProgRock</genre>
+    <genre genre_id="ExperimentalRock">ExperimentalRock</genre>
+    <genre genre_id="Shoegaze">Shoegaze</genre>
+    <genre genre_id="PostPunk">PostPunk</genre>
+    <genre genre_id="PostRock">PostRock</genre>
+    <genre genre_id="DeathMetal">DeathMetal</genre>
+    <genre genre_id="PopRock">PopRock</genre>
+    <genre genre_id="IndieRock">IndieRock</genre>
+    <genre genre_id="GarageRock">GarageRock</genre>
+    <genre genre_id="IndustrialMetal">Industrial Metal</genre>
+    <genre genre_id="HeavyMetal">Heavy Metal</genre>
+    <genre genre_id="PsychedelicRock">Psychedelic Rock</genre>
+  </genres>
+  <chart>
+    <album album_id="3" artist_id="Radiohead">
+      <album_name>Kid A</album_name>
+      <album_release_date>03.10.2000</album_release_date>
+      <type genre_id="ExperimentalRock" />
+      <album_length units="min">49</album_length>
+      <album_track_count>10</album_track_count>
+      <album_rating>
+        <rym_rating>4.19</rym_rating>
+        <metacritic_rating>80</metacritic_rating>
+      </album_rating>
+    </album>
+    <album album_id="4" artist_id="PinkFloyd">
+      <album_name>Wish You Were Here</album_name>
+      <album_release_date>23.03.1973</album_release_date>
+      <type genre_id="ProgRock" />
+      <album_length units="min">45</album_length>
+      <album_track_count>5</album_track_count>
+      <album_rating>
+        <rym_rating>4.20</rym_rating>
+        <metacritic_rating>75</metacritic_rating>
+      </album_rating>
+    </album>
+    <album album_id="5" artist_id="HaveaNiceLife">
+      <album_name>dddd</album_name>
+      <album_release_date>10.10.1969</album_release_date>
+      <type genre_id="ProgRock" />
+      <album_length units="min">43</album_length>
+      <album_track_count>5</album_track_count>
+      <album_rating>
+        <rym_rating>4.30</rym_rating>
+        <metacritic_rating>79</metacritic_rating>
+      </album_rating>
+    </album>
+    <album album_id="6" artist_id="MyBloodyValentine">
+      <album_name>Loveless</album_name>
+      <album_release_date>25.10.1991</album_release_date>
+      <type genre_id="Shoegaze" />
+      <album_length units="min">48</album_length>
+      <album_track_count>11</album_track_count>
+      <album_rating>
+        <rym_rating>4.21</rym_rating>
+        <metacritic_rating>93</metacritic_rating>
+      </album_rating>
+    </album>
+    <album album_id="7" artist_id="HaveaNiceLife">
+      <album_name>Deathconsciousness</album_name>
+      <album_release_date>21.02.2008</album_release_date>
+      <type genre_id="PostPunk" />
+      <album_length units="min">84</album_length>
+      <album_track_count>13</album_track_count>
+      <album_rating>
+        <rym_rating>3.85</rym_rating>
+        <metacritic_rating>79</metacritic_rating>
+      </album_rating>
+    </album>
+    <album album_id="9" artist_id="Behemoth">
+      <album_name>The Satanist</album_name>
+      <album_release_date>04.01.2014</album_release_date>
+      <type genre_id="DeathMetal" />
+      <album_length units="min">58</album_length>
+      <album_track_count>12</album_track_count>
+      <album_rating>
+        <rym_rating>3.62</rym_rating>
+        <metacritic_rating>92</metacritic_rating>
+      </album_rating>
+    </album>
+    <album album_id="10" artist_id="Toto">
+      <album_name>IV</album_name>
+      <album_release_date>08.04.1982</album_release_date>
+      <type genre_id="PopRock" />
+      <album_length units="min">41</album_length>
+      <album_track_count>10</album_track_count>
+      <album_rating>
+        <rym_rating>3.33</rym_rating>
+        <metacritic_rating>77</metacritic_rating>
+      </album_rating>
+    </album>
+    <album album_id="11" artist_id="Radiohead">
+      <album_name>A Moon Shaped Pool</album_name>
+      <album_release_date>08.05.2016</album_release_date>
+      <type genre_id="AltRock" />
+      <album_length units="min">52</album_length>
+      <album_track_count>25</album_track_count>
+      <album_rating>
+        <rym_rating>3.83</rym_rating>
+        <metacritic_rating>88</metacritic_rating>
+      </album_rating>
+    </album>
+    <album album_id="12" artist_id="ArcticMonkeys">
+      <album_name>kek</album_name>
+      <album_release_date>27.06.2018</album_release_date>
+      <type genre_id="PsychedelicRock" />
+      <album_length units="min">41</album_length>
+      <album_track_count>12</album_track_count>
+      <album_rating>
+        <rym_rating>3.06</rym_rating>
+        <metacritic_rating>81</metacritic_rating>
+      </album_rating>
+    </album>
+    <album album_id="13" artist_id="RoyalBlood">
+      <album_name>ggg</album_name>
+      <album_release_date>25.08.2014</album_release_date>
+      <type genre_id="GarageRock" />
+      <album_length units="min">2</album_length>
+      <album_track_count>2</album_track_count>
+      <album_rating>
+        <rym_rating>2.22</rym_rating>
+        <metacritic_rating>22</metacritic_rating>
+      </album_rating>
+    </album>
+    <album album_id="14" artist_id="ArcticMonkeys">
+      <album_name>Suck it and see</album_name>
+      <album_release_date>07.08.2011</album_release_date>
+      <type genre_id="IndieRock" />
+      <album_length units="min">40</album_length>
+      <album_track_count>12</album_track_count>
+      <album_rating>
+        <rym_rating>3.01</rym_rating>
+        <metacritic_rating>74</metacritic_rating>
+      </album_rating>
+    </album>
+    <album album_id="15" artist_id="Rammstein">
+      <album_name>Rosenrot</album_name>
+      <album_release_date>28.10.2005</album_release_date>
+      <type genre_id="PostRock" />
+      <album_length units="min">48</album_length>
+      <album_track_count>11</album_track_count>
+      <album_rating>
+        <rym_rating>3.10</rym_rating>
+        <metacritic_rating>73</metacritic_rating>
+      </album_rating>
+    </album>
+    <album album_id="17" artist_id="Rammstein">
+      <album_name>Mutter</album_name>
+      <album_release_date>02.04.2001</album_release_date>
+      <type genre_id="IndustrialMetal" />
+      <album_length units="min">45</album_length>
+      <album_track_count>11</album_track_count>
+      <album_rating>
+        <rym_rating>3.65</rym_rating>
+        <metacritic_rating>74</metacritic_rating>
+      </album_rating>
+    </album>
+    <album album_id="18" artist_id="RoyalBlood">
+      <album_name>dad</album_name>
+      <album_release_date>16.06.2017</album_release_date>
+      <type genre_id="GarageRock" />
+      <album_length units="min">34</album_length>
+      <album_track_count>10</album_track_count>
+      <album_rating>
+        <rym_rating>3.02</rym_rating>
+        <metacritic_rating>71</metacritic_rating>
+      </album_rating>
+    </album>
+    <album album_id="19" artist_id="BlackSabbath">
+      <album_name>Paranoid</album_name>
+      <album_release_date>18.09.1970</album_release_date>
+      <type genre_id="HeavyMetal" />
+      <album_length units="min">41</album_length>
+      <album_track_count>8</album_track_count>
+      <album_rating>
+        <rym_rating>4.21</rym_rating>
+        <metacritic_rating>1</metacritic_rating>
+      </album_rating>
+    </album>
+    <album album_id="21" artist_id="JoyDivision">
+      <album_name>Unknown Pleasures</album_name>
+      <album_release_date>14.06.1979</album_release_date>
+      <type genre_id="PostPunk" />
+      <album_length units="min">39</album_length>
+      <album_track_count>10</album_track_count>
+      <album_rating>
+        <rym_rating>4.13</rym_rating>
+        <metacritic_rating>83</metacritic_rating>
+      </album_rating>
+    </album>
+    <album album_id="22" artist_id="Radiohead">
+      <album_name>In Rainbows</album_name>
+      <album_release_date>10.10.2007</album_release_date>
+      <type genre_id="AltRock" />
+      <album_length units="min">42</album_length>
+      <album_track_count>10</album_track_count>
+      <album_rating>
+        <rym_rating>4.05</rym_rating>
+        <metacritic_rating>88</metacritic_rating>
+      </album_rating>
+    </album>
+    <album album_id="23" artist_id="TheSmiths">
+      <album_name>The Queen Is Dead</album_name>
+      <album_release_date>16.06.1986</album_release_date>
+      <type genre_id="Shoegaze" />
+      <album_length units="min">37</album_length>
+      <album_track_count>10</album_track_count>
+      <album_rating>
+        <rym_rating>4.15</rym_rating>
+        <metacritic_rating>99</metacritic_rating>
+      </album_rating>
+    </album>
+    <album album_id="24" artist_id="TheDoors">
+      <album_name>The Doors</album_name>
+      <album_release_date>04.01.1967</album_release_date>
+      <type genre_id="PsychedelicRock" />
+      <album_length units="min">44</album_length>
+      <album_track_count>11</album_track_count>
+      <album_rating>
+        <rym_rating>4.15</rym_rating>
+        <metacritic_rating>2</metacritic_rating>
+      </album_rating>
+    </album>
+    <album album_id="25" artist_id="Radiohead">
+      <album_name>The Bends</album_name>
+      <album_release_date>13.03.1995</album_release_date>
+      <type genre_id="AltRock" />
+      <album_length units="min">48</album_length>
+      <album_track_count>12</album_track_count>
+      <album_rating>
+        <rym_rating>3.91</rym_rating>
+        <metacritic_rating>39</metacritic_rating>
+      </album_rating>
+    </album>
+    <album album_id="26" artist_id="Radiohead">
+      <album_name>The Bends</album_name>
+      <album_release_date>13.03.1995</album_release_date>
+      <type genre_id="AltRock" />
+      <album_length units="min">48</album_length>
+      <album_track_count>12</album_track_count>
+      <album_rating>
+        <rym_rating>3.91</rym_rating>
+        <metacritic_rating>39</metacritic_rating>
+      </album_rating>
+    </album>
+  </chart>
+</albumchart>

@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		   targetNamespace="http://www.example.org/types"
+		   xmlns:xD="http://www.example.org/types"
+		   elementFormDefault="qualified" >
+ 
+ 		<xs:element name="albumchart" type="xD:albumchart_type">
+			
+			<xs:key name="artist_idKEY">
+				<xs:selector xpath="artists/artist"/>
+				<xs:field xpath="artist_id"/>
+			</xs:key>		
+			
+			<xs:keyref name="artist_idKEYREF" refer="xD:artist_idKEY">
+				<xs:selector xpath="chart/album"/>
+				<xs:field xpath="artist_id"/>			
+			</xs:keyref>
+			
+		</xs:element>
+
+  
+ 
+	
+	<xs:simpleType name="release_date_type">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{2}.\d{2}.\d{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+	
+	<xs:simpleType name="count_type">
+        <xs:restriction base="xs:integer">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="25"/>
+		</xs:restriction>
+    </xs:simpleType>
+  
+  
+  <xs:simpleType name="album_name_type">
+	    <xs:restriction base="xs:string">
+			<xs:maxLength value="64"/>
+		</xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="rym_rating_type">
+	    <xs:restriction base="xs:string">
+			 <xs:pattern value="\d.\d{2}"/>
+		</xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="metacritic_rating_type">
+	    <xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="100"/>
+		</xs:restriction>
+  </xs:simpleType>
+  
+  
+  <xs:complexType name="rating_type">
+      <xs:sequence>
+        <xs:element name="rym_rating" type="xD:rym_rating_type" />
+		<xs:element name="metacritic_rating" type="xD:metacritic_rating_type" />
+      </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="album_length_type">
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="units" use="required">
+            <xs:simpleType>
+              <xs:restriction base="xs:NMTOKEN">
+                <xs:enumeration value="h" />
+                <xs:enumeration value="min" />
+                <xs:enumeration value="sec" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+	
+	<xs:complexType name="type_of_type">
+      <xs:attribute name="genre_id" type="xs:string" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="artist_type">
+	    <xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="artist_id" type="xs:string" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+  <xs:complexType name="genre_type">
+      <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="genre_id" type="xs:string" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+	
+	
+	<xs:complexType name="album_type">
+      <xs:sequence>
+        <xs:element name="album_name" type="xD:album_name_type"/>
+        <xs:element name="album_release_date" type="xD:release_date_type" /> 
+		<xs:element name="type"	type="xD:type_of_type"/>	
+        <xs:element name="album_length" type="xD:album_length_type"/>
+        <xs:element name="album_track_count" type="xD:count_type"/>
+        <xs:element name="album_rating" type="xD:rating_type"/>
+      </xs:sequence>
+      <xs:attribute name="album_id" type="xs:string" use="required" />
+      <xs:attribute name="artist_id" type="xs:string" use="required" />	  
+    </xs:complexType>
+	
+	
+	
+	<xs:simpleType name="author_type">
+	    <xs:restriction base="xs:string">
+			<xs:minLength value="7"/>
+			<xs:maxLength value="64"/>
+		</xs:restriction>
+  </xs:simpleType>
+  
+  
+  <xs:complexType name="chart_type">
+      <xs:sequence>
+        <xs:element name="album" minOccurs="1" maxOccurs="unbounded" type="xD:album_type" />
+      </xs:sequence>
+    </xs:complexType>
+	
+	<xs:complexType name="artists_type">
+		<xs:sequence>
+			<xs:element name="artist" type="xD:artist_type" maxOccurs="unbounded" minOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+
+  <xs:complexType name="genres_type">
+    <xs:sequence>
+      <xs:element name="genre" type="xD:genre_type" maxOccurs="unbounded" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+
+  
+    <xs:complexType name="chartauthor_type">
+      <xs:sequence>
+        <xs:element name="author" type="xD:author_type" />
+        <xs:element name="author" type="xD:author_type" />
+      </xs:sequence>
+    </xs:complexType>
+	
+	<xs:complexType name="albumchart_type">
+      <xs:sequence>
+        <xs:element name="chartauthor" type="xD:chartauthor_type"/>
+        <xs:element name="artists" type="xD:artists_type"/>
+        <xs:element name="genres" type="xD:genres_type"/>
+        <xs:element name="chart" type="xD:chart_type"/>
+      </xs:sequence>
+    </xs:complexType>  
+
+  
+</xs:schema>

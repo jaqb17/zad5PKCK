@@ -1,0 +1,56 @@
+﻿<Window x:Class="_5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_5"
+        mc:Ignorable="d"
+        Title="Album Chart Browser" Height="449" Width="1008.7">
+    <Grid>
+
+        <Grid HorizontalAlignment="Left" Height="274" Margin="26,25,0,0" VerticalAlignment="Top" Width="492">
+            <ListView PreviewMouseUp="listBox_PreviewMouseDown"  x:Name="listBox" Height="371" VerticalAlignment="Top" ItemsSource="{Binding}" Margin="0,0,-291,-97">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="ID" Width="30px" DisplayMemberBinding="{Binding Id}" />
+                        <GridViewColumn Header="Name" Width="200px" DisplayMemberBinding="{Binding albumName.Value}" />
+                        <GridViewColumn Header="Artist" Width="130px" DisplayMemberBinding="{Binding ArtistValue}" />
+                        <GridViewColumn Header="Genre" Width="130px" DisplayMemberBinding="{Binding type.Value}" />
+                        <GridViewColumn Header="Release date" Width="75px" DisplayMemberBinding="{Binding albumReleaseDate.Value}" />
+                        <GridViewColumn Header="Length" Width="40px" DisplayMemberBinding="{Binding albumLength.Value}" />
+                        <GridViewColumn Header="Tracks" Width="40px" DisplayMemberBinding="{Binding albumTrackCount.Value}" />
+                        <GridViewColumn Header="RYM" Width="40px" DisplayMemberBinding="{Binding albumRating.rymRating.Value}" />
+                        <GridViewColumn Header="Metacritic" Width="70px" DisplayMemberBinding="{Binding albumRating.metacriticRating.Value}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+        <Label x:Name="releaseDateLabel" Content="Release date" HorizontalAlignment="Left" Margin="812,109,0,0" VerticalAlignment="Top"/>
+        <Label Content="Title" HorizontalAlignment="Left" Margin="812,25,0,0" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="titleTextbox" HorizontalAlignment="Left" Height="23" Margin="859,27,0,0" TextWrapping="Wrap" Text="Title" VerticalAlignment="Top" Width="132"/>
+        <ComboBox x:Name="artistCombobox" HorizontalAlignment="Left" Margin="859,55,0,0" VerticalAlignment="Top" Width="132"/>
+        <ComboBox x:Name="genreCombobox" HorizontalAlignment="Left" Margin="859,82,0,0" VerticalAlignment="Top" Width="132"/>
+        <DatePicker x:Name="releaseDatePicker" HorizontalAlignment="Left" Margin="889,109,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="lengthTextbox" HorizontalAlignment="Left" Height="23" Margin="859,140,0,0" TextWrapping="Wrap" Text="Length" VerticalAlignment="Top" Width="132" />
+        <ComboBox x:Name="unitsCombobox" HorizontalAlignment="Left" Margin="859,168,0,0" VerticalAlignment="Top" Width="132"/>
+        <TextBox x:Name="tracksTextbox" HorizontalAlignment="Left" Height="23" Margin="859,195,0,0" TextWrapping="Wrap" Text="Track count" VerticalAlignment="Top" Width="132"/>
+        <TextBox x:Name="rymTextbox" HorizontalAlignment="Left" Height="23" Margin="859,223,0,0" TextWrapping="Wrap" Text="RYM rating" VerticalAlignment="Top" Width="132"/>
+        <TextBox x:Name="metacriticTextbox" HorizontalAlignment="Left" Height="23" Margin="859,251,0,0" TextWrapping="Wrap" Text="metacritic rating" VerticalAlignment="Top" Width="132"/>
+
+        <Label Content="Artist" HorizontalAlignment="Left" Margin="812,55,0,0" VerticalAlignment="Top"/>
+        <Label Content="Genre" HorizontalAlignment="Left" Margin="812,81,0,0" VerticalAlignment="Top"/>
+        <Label Content="Length" HorizontalAlignment="Left" Margin="812,137,0,0" VerticalAlignment="Top"/>
+        <Label Content="Units" HorizontalAlignment="Left" Margin="812,168,0,0" VerticalAlignment="Top" Height="32"/>
+        <Label Content="Tracks" HorizontalAlignment="Left" Margin="812,195,0,0" VerticalAlignment="Top"/>
+        <Label Content="RYM" HorizontalAlignment="Left" Margin="812,221,0,0" VerticalAlignment="Top"/>
+        <Label Content="meta" HorizontalAlignment="Left" Margin="812,247,0,0" VerticalAlignment="Top"/>
+
+        <Button x:Name="removeButton" Click="removeButton_Click" Content="Remove album" HorizontalAlignment="Left" Margin="859,284,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="addButton" Click="addButton_Click" Content="Add album" HorizontalAlignment="Left" Margin="859,334,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="saveButton" Click="saveButton_Click" Content="Save album" HorizontalAlignment="Left" Margin="859,309,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="reportButton" Click="reportButton_Click" Content="Generate report" HorizontalAlignment="Left" Margin="859,359,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="xhtmlButton" Click="xhtmlButton_Click" Content="Generate XHTML report" HorizontalAlignment="Left" Margin="821,384,0,0" VerticalAlignment="Top" Width="170"/>
+
+    </Grid>
+</Window>
